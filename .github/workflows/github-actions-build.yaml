@@ -4,7 +4,15 @@ jobs:
   build:
     runs-on: macos-10.15  
     steps:
-      - uses: actions/checkout@v2
-      - run: | 
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build
+        run: | 
           make
           make install
+      - name: artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist-without-markdown
+          path: |
+            output
