@@ -22,7 +22,7 @@ MUSL_SITE = https://musl.libc.org/releases
 MUSL_REPO = git://git.musl-libc.org/musl
 
 LINUX_SITE = https://cdn.kernel.org/pub/linux/kernel
-LINUX_HEADERS_SITE = http://ftp.barfooze.de/pub/sabotage/tarballs/
+LINUX_HEADERS_SITE = https://ftp.barfooze.de/pub/sabotage/tarballs/
 
 DL_CMD = wget -c -O
 SHA1_CMD = sha1sum -c
