@@ -59,7 +59,7 @@ SHA1_CMD = shasum -a 1 -c
 # system you build on can natively (or via binfmt_misc and qemu) run
 # binaries produced by the existing toolchain (in this example, i486).
 
-COMMON_CONFIG += CC="i486-linux-musl-gcc -static --static" CXX="i486-linux-musl-g++ -static --static"
+# COMMON_CONFIG += CC="i486-linux-musl-gcc -static --static" CXX="i486-linux-musl-g++ -static --static"
 
 # Recommended options for smaller build for deploying binaries:
 
