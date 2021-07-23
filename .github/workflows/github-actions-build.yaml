@@ -1,8 +1,10 @@
+name: learn-github-actions
+on: [push]
 jobs:
   build:
-    runs-on: macos-10.15
-    uses: hcl/musl-cross-make
+    runs-on: macos-10.15  
     steps:
-      - run: |
-        make
-        make install
+      - uses: hcl/musl-cross-make@master
+      - run: | 
+          make
+          make install
